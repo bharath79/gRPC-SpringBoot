@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package  com.example;
+
+option java_multiple_files=true;
+
+message Book{
+  int32 book_id =1;
+  string title =2;
+  float price =3;
+  int32 pages =4;
+  int32 author_id =5;
+}
+
+message Author{
+  int32 author_id =1;
+  string first_name =2;
+  string last_name =3;
+  string gender =4;
+  int32 book_id =5;
+}
+
+service BookAuthorService{
+//  unary -synchronus
+//  1 req 1 res
+  rpc getAuthor(Author) returns(Author){}
+
+//  server streaming - async
+//  1 req many res
+  rpc getBookByAuthor(Author) returns(stream Book){}
+
+//  client streaming - async
+//  many req 1 res
+  rpc getExpensiveBook(stream Book) returns (Book){}
+
+//  bi directional streaming - async
+//  many req many res
+  rpc getBookByAuthorGender(stream Book) returns (stream Book) {}
+}

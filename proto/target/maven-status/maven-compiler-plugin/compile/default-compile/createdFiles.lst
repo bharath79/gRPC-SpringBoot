@@ -1,0 +1,17 @@
+com\example\BookAuthorServiceGrpc.class
+com\example\AuthorOrBuilder.class
+com\example\BookAuthorServiceGrpc$BookAuthorServiceImplBase.class
+com\example\BookAuthorServiceGrpc$BookAuthorServiceStub.class
+com\example\Author$Builder.class
+com\example\BookAuthorServiceGrpc$BookAuthorServiceDescriptorSupplier.class
+com\example\BookOrBuilder.class
+com\example\Author.class
+com\example\Author$1.class
+com\example\Schema.class
+com\example\Schema$1.class
+com\example\Book$1.class
+com\example\BookAuthorServiceGrpc$BookAuthorServiceFutureStub.class
+com\example\BookAuthorServiceGrpc$MethodHandlers.class
+com\example\BookAuthorServiceGrpc$BookAuthorServiceBlockingStub.class
+com\example\Book$Builder.class
+com\example\Book.class
